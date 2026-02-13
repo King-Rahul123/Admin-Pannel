@@ -8,7 +8,7 @@ import Order from "./pages/Orders";
 import AddCoupon from "./components/Add_Coupon";
 import CouponList from "./pages/Coupon_List";
 import GiftCardList from "./pages/GiftCard_List";
-import AddGiftCard from "./components/Add_GiftCArd";
+import AddGiftCard from "./components/Add_GiftCard";
 import FlashSale from "./pages/FlashSale";
 import Product from "./pages/Product";
 import Customer from "./pages/Customer";
