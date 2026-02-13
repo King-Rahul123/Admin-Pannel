@@ -16,7 +16,7 @@ import AddProduct from "./components/AddProduct";
 import Brand from "./pages/Brand";
 import AddBrand from "./components/Add_Brand";
 import Category from "./pages/Category";
-import Subcategory from "./pages/SubCategory";
+import Subcategory from "./pages/Subcategory";
 import Returns from "./pages/Returns";
 import WarrantyClaim from "./pages/WarrentyClaim";
 import RefundRequest from "./pages/RefundRequest";
