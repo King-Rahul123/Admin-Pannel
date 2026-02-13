@@ -1,3 +1,64 @@
+# Admin Page — Frontend Project Structure
+
+This README lists the full project structure for the frontend of the Admin Page.
+
+```
+frontend/
+  ├─ eslint.config.js
+  ├─ index.html
+  ├─ package.json
+  ├─ package-lock.json
+  ├─ README.md
+  ├─ vite.config.js
+  ├─ public/
+  └─ src/
+     ├─ App.jsx
+     ├─ index.css
+     ├─ main.jsx
+     ├─ assets/
+     ├─ components/
+     │  ├─ Add_Brand.jsx
+     │  ├─ Add_Coupon.jsx
+     │  ├─ Add_GiftCard.jsx
+     │  ├─ AddProduct.jsx
+     │  ├─ Header.jsx
+     │  └─ Sidebar.jsx
+     └─ pages/
+        ├─ Brand.jsx
+        ├─ Category.jsx
+        ├─ Coupon_List.jsx
+        ├─ Customer.jsx
+        ├─ Customers.jsx
+        ├─ Dashboard.jsx
+        ├─ FlashSale.jsx
+        ├─ GiftCard_List.jsx
+        ├─ Orders.jsx
+        ├─ Payment.jsx
+        ├─ Product.jsx
+        ├─ Profile.jsx
+        ├─ RefundRequest.jsx
+        ├─ ReportAnalytics.jsx
+        ├─ Returns.jsx
+        ├─ Subcategory.jsx
+        └─ WarrentyClaim.jsx
+
+```
+
+Brief notes:
+- Root files: build/config files (`vite.config.js`, `eslint.config.js`), entry `index.html`, and `package.json` for dependencies and scripts.
+- `public/`: static assets served as-is.
+- `src/`: application source code.
+  - `assets/`: logos, images, fonts.
+  - `components/`: reusable UI components (header, sidebar, add-item forms).
+  - `pages/`: route-level views for the admin dashboard and features.
+
+If you want, I can also:
+- Expand descriptions for each file.
+- Generate file links or a clickable tree for documentation.
+- Add badges or usage instructions to this README.
+
+---
+Generated automatically.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
