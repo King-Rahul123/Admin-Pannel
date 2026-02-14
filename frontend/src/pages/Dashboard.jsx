@@ -77,22 +77,22 @@ export default function Dashboard() {
                     </div>
 
                     <div className="overflow-x-auto">
-                        <table className="w-full text-left md:text-normal text-sm">
+                        <table className="w-full text-center md:text-normal text-sm">
                             <thead className="text-gray-500 border-b">
                                 <tr>
-                                    <th className="py-2">Order</th>
-                                    <th>Customer</th>
-                                    <th>Total</th>
-                                    <th>Status</th>
+                                    <th className="py-2 px-2">Order</th>
+                                    <th className="px-2">Customer</th>
+                                    <th className="px-2">Total</th>
+                                    <th className="px-2">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {orders.map((o) => (
                                 <tr key={o.id} className="border-b hover:bg-gray-50">
-                                    <td className="py-3">#{o.id}</td>
-                                    <td>{o.customer}</td>
-                                    <td>${o.total.toFixed(2)}</td>
-                                    <td><span className={`px-3 py-1 text-xs rounded-full ${statusColor( o.status)}`}>{o.status}</span></td>
+                                    <td className="py-3 px-2">#{o.id}</td>
+                                    <td className="px-2">{o.customer}</td>
+                                    <td className="px-2">${o.total.toFixed(2)}</td>
+                                    <td className="px-2"><span className={`px-3 py-1 text-xs rounded-full ${statusColor( o.status)}`}>{o.status}</span></td>
                                 </tr>
                                 ))}
                             </tbody>
@@ -107,24 +107,26 @@ export default function Dashboard() {
                         <Link to="/add-product" className="bg-blue-600 text-sm md:text-normal text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"><i className="fas fa-plus"></i> Add</Link>
                     </div>
 
-                    <table className="w-full text-left">
-                        <thead className="text-gray-500 border-b">
-                            <tr>
-                                <th className="py-2">Product</th>
-                                <th>Price</th>
-                                <th>Stock</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {products.map((p) => (
-                                <tr key={p.id} className="border-b hover:bg-gray-50">
-                                    <td className="py-3">{p.name}</td>
-                                    <td>${p.price.toFixed(2)}</td>
-                                    <td>{p.stock}</td>
+                    <div className="overflow-x-auto">
+                        <table className="w-full text-center md:text-normal text-sm">
+                            <thead className="text-gray-500 border-b">
+                                <tr>
+                                    <th className="py-2 px-2">Product</th>
+                                    <th className="px-2">Price</th>
+                                    <th className="px-2">Stock</th>
                                 </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                {products.map((p) => (
+                                    <tr key={p.id} className="border-b hover:bg-gray-50">
+                                        <td className="py-3 px-2">{p.name}</td>
+                                        <td className="px-2">${p.price.toFixed(2)}</td>
+                                        <td className="px-2">{p.stock}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
 
